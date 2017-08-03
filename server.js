@@ -19,20 +19,19 @@ app.get('/api/family', mainCtrl.getFamily)
 app.get('/api/family/:gender', mainCtrl.getFamilyByGender)
 app.get('/api/restaurants', mainCtrl.getRestaurants)
 app.get('/api/restaurants/:name', mainCtrl.getRestaurantsByName)
-app.post('/api/name', mainCtrl.postName);
-/*app.post('/api/location', mainCtrl.postLocation);
+app.put('/api/name', mainCtrl.changeName);
+app.put('/api/location', mainCtrl.changeLocation);
 app.post('/api/hobbies', mainCtrl.postHobbies);
 app.post('/api/occupations', mainCtrl.postOccupations);
 app.post('/api/family', mainCtrl.postFamily);
 app.post('/api/restaurants', mainCtrl.postRestaurants);
 
+app.get('/api/skillz', mainCtrl.getSkillz);
+app.post('/api/skillz', middleware.generateId, mainCtrl.postSkillz);
 
-app.get('/api/messages', function(req, res, next) {
-  res.status(200).json({messages:messages});
+app.get('/secrets/:username/:pin', middleware.verifyUser, mainCtrl.getSecrets);
 
-});
 
-*/
 app.listen(port, function(){
   console.log(`Dude, I'm Listening on port ${port}. `)
 })
