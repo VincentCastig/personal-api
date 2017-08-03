@@ -1,12 +1,15 @@
 
 
-const {user} = require('../user');
+const {user} = require('../user.js');
 //Functions to export to the end points!
 module.exports = {
   getName(req,res,next) {
+      console.log(user)
       res.status('200').json(user.name)
-      
-  },
+
+
+  }
+  /*
   getLocation(req,res,next) {
       res.status('200').json(user.location)
 
@@ -42,4 +45,5 @@ module.exports = {
       }
       res.status('200').json(user.restaurants)
   }
+  */
 }
