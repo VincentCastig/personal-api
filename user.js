@@ -1,7 +1,7 @@
 const user = {
   name: "Vincent",
   location: "Dallas",
-  occupations: ['scuba instructer, welder, programmer'],
+  occupations: ["scuba instructer", 'welder', 'programmer'],
   hobbies: [
     {
       name: 'golf',
@@ -12,8 +12,8 @@ const user = {
       type: 'sport'
     },
     {
-      name: 'hunting',
-      type: 'sport'
+      name: 'weight-lifting',
+      type: 'exercise'
     }
   ],
   family: [
