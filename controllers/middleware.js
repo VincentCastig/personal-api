@@ -1,5 +1,5 @@
 var user = require('../user.js')
-/*module.exports = {
+module.exports = {
 
 addHeaders: function(req, res, next){
   res.status(200).set({

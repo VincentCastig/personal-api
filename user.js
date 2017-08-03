@@ -25,7 +25,7 @@ const user = {
     {
       name: 'steven',
       relation: 'cousin',
-      gender: 'N/A'
+      gender: 'female'
     },{
       name: 'Harry',
       relation: 'neice',
@@ -46,7 +46,7 @@ const user = {
     {
       name: 'sonic',
       type: 'fast-food',
-      rating: 2
+      rating: 1
     }
   ]
 };

@@ -160,7 +160,7 @@ As simple as that, we no longer have to individually apply headers to every sing
 * These endpoints should only be accessible with a GET request (read-only)
 * These endpoints will call functions from your controller rather than having them declared inside of the endpoint. i.e `app.get('/name', mainCtrl.getName)` rather than `app.get('/name', function(req, res) { /*...*/});`
 
-###### `GET /name`
+/*###### `GET /name`
 - returns: Your name (e.g. Joe Sandwiches) in a JSON object:
 `{ "name": "Donald Duck" }`
 
@@ -202,7 +202,7 @@ As simple as that, we no longer have to individually apply headers to every sing
 ###### `GET /family/:gender`
 - returns: All family members of the specified gender (Hint: see the hint on the `/hobbies/:type` endpoint)
 
-###### `GET /restaurants`
+/*###### `GET /restaurants`
 - returns: Your favorite restaurants, as an array of objects in a JSON object.
 
 - Allow for a 'rating' query to retrieve all restaurants with a rating greater than or equal to 2. (Hint: go [here](https://support.sparkpay.com/hc/en-us/articles/202836800-Resource-Query-Filtering-Syntax) to see how to use greater than or equal to - see the Comparison Operators section.)
@@ -301,3 +301,19 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 © DevMountain LLC, 2015. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
+
+
+
+
+Access-Control-Allow-Headers →Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Allow-Methods →OPTIONS, GET, POST, PUT
+Access-Control-Allow-Origin →*
+Connection →keep-alive
+Content-Length →18
+Content-Security-Policy →default-src 'self' devmountain.github.io
+Content-Type →application/json; charset=utf-8
+Date →Thu, 03 Aug 2017 19:01:03 GMT
+ETag →W/"12-MW6L/ldGdbdelleRn+mWVL4xzp8"
+X-Frame-Options →SAMEORIGIN
+X-Powered-By →Express
+X-XSS-Protection →1; mode=block
